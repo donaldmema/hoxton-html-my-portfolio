@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 
 .container {
   display: grid;
+  align-items: center;
 }
 
 .header {
@@ -19,8 +20,43 @@ body {
   margin: 20px;
   display: grid;
   grid-auto-flow: column;
+  grid-template-columns: auto 40px 80px 100px 80px;
+  padding: 1rem;
 }
 
 .header__items {
   color: whitesmoke;
+}
+
+.intro {
+  background-color: #35382e;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 650px;
+  height: 200px;
+  margin: 250px auto;
+}
+
+.projects {
+  background-color: #ede6e2;
+  display: grid;
+  /* grid-auto-flow: column; */
+}
+
+.projects__body {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.experience {
+  background-color: #5bc3eb;
+  display: grid;
+  place-items: center;
+}
+
+.back-to-top {
+  display: grid;
+  place-items: center;
+  background-color: #35382e;
 }
