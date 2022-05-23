@@ -4,6 +4,7 @@
   box-sizing: border-box;
 
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -34,29 +35,70 @@ body {
   padding: 1rem;
   width: 650px;
   height: 200px;
-  margin: 250px auto;
+  margin: 350px auto;
 }
 
 .projects {
   background-color: #ede6e2;
   display: grid;
-  /* grid-auto-flow: column; */
+  padding: 80px 30px;
+  place-items: center;
 }
 
 .projects__body {
+  padding: 40px 200px;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.project__item {
+  border: 2px solid rgba(0, 0, 0, 0.199);
+  background-color: #f7f4f3;
+  border-radius: 5px;
+}
+
+.project__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.project__item__link {
+  margin: 10px;
+  background-color: #fa775d;
+}
+
+.project__item h3 {
+  color: #f0684c;
 }
 
 .experience {
   background-color: #5bc3eb;
+  padding: 80px 20px;
   display: grid;
-  place-items: center;
+  gap: 20px;
+  place-content: center;
+}
+
+.experience-items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 200px auto 200px;
+  gap: 10px;
+  padding: 15px 5px;
+  border-radius: 5px;
+  background-color: #ede6e2;
 }
 
 .back-to-top {
   display: grid;
   place-items: center;
+  padding: 20px 20px;
   background-color: #35382e;
+}
+
+.back-to-top a {
+  text-decoration: none;
+  color: white;
 }
