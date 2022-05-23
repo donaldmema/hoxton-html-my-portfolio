@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fa775d;
+}
+
+.container {
+  display: grid;
+}
+
+.header {
+  background-color: #35382e;
+  margin: 20px;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.header__items {
+  color: whitesmoke;
+}
