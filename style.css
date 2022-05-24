@@ -41,6 +41,7 @@ body {
   width: 650px;
   height: 200px;
   margin: 350px auto;
+  display: grid;
 }
 
 .title h1 {
@@ -49,6 +50,10 @@ body {
 
 .intro span {
   color: #5ac0e8;
+}
+
+.intro p {
+  color: white;
 }
 
 .projects {
@@ -70,6 +75,9 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.199);
   background-color: #f7f4f3;
   border-radius: 5px;
+  display: grid;
+  padding: 1rem;
+  gap: 10px;
 }
 
 .project__item a {
@@ -78,7 +86,7 @@ body {
 }
 
 .project__item__link {
-  margin: 10px;
+  padding: 7px 0px;
   background-color: #fa775d;
 }
 
@@ -90,18 +98,28 @@ body {
   background-color: #5bc3eb;
   padding: 80px 20px;
   display: grid;
-  gap: 20px;
+  gap: 15px;
   place-content: center;
 }
 
 .experience-items {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 200px auto 200px;
-  gap: 10px;
-  padding: 15px 5px;
-  border-radius: 5px;
+  grid-template-columns: auto 200px 200px;
+  gap: 30px;
+  padding: 20px 15px;
+  border-radius: 3px;
   background-color: #ede6e2;
+}
+
+.experience-items h3 {
+  font-size: 16px;
+  color: #35382ee1;
+}
+
+.experience-items h4 {
+  font-size: 15px;
+  color: #35382ec4;
 }
 
 .back-to-top {
